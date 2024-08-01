@@ -32,21 +32,21 @@
 
         public void
         setDepartureAirport(String departure) throws InterruptedException {
-           // sleep(3000);
+      
             departureAirportButton.click();
 
             DepartureInputElement.shouldBe(visible).setValue(departure).pressEnter();
         }
 
         public void setDestinationAirport(String destination) throws InterruptedException {
-          //  sleep(2000);
+        
             destinationAirportButton.click();
-            //sleep(4000);
+          
             DestinationInputElement.shouldBe(visible).setValue(destination).pressEnter();
         }
 
         public void setTravelDate(String date) throws InterruptedException {
-            sleep(3000);
+     
             DepartureDateField.click();
             // Assuming the date format is dd/MM/yyyy
             String[] dateParts = date.split("/");
@@ -64,7 +64,7 @@
 
         public void verifyFlightDetails(String departure, String destination) throws InterruptedException {
             // Ensure flight status cards are present
-          //  sleep(4000);
+         
 
             flightCards.shouldHave(sizeGreaterThan(0));
 
