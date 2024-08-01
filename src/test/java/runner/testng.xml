@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="verifyFlights" parallel="false" thread-count="1" verbose="1">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Verify Flight Status" thread-count="1">
+        <classes>
+            <class name="specs.uitest.FlightStatusTest"/>
+
+        </classes>
+    </test>
+
+</suite>

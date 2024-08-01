@@ -1,0 +1,5 @@
+com\qa\driver\DriverFactory.class
+com\qa\utils\csv_reader\Settings.class
+com\qa\log\Log.class
+com\qa\pageObjects\FlightStatusPage.class
+com\qa\pageObjects\Base_PO.class
